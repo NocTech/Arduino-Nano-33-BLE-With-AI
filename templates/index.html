@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperaturövervakning</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+        h1 {
+            color: #333;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background-color: #f9f9f9;
+        }
+        canvas {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌡 Temperaturövervakning</h1>
+
+    <div class="card">
+        <h2>Senaste temperatur</h2>
+        <p id="latest-temp">Laddar...</p>
+        <p><strong>Tidpunkt:</strong> <span id="latest-time">-</span></p>
+    </div>
+
+    <div class="card">
+        <h2>Prediktion om 10 minuter</h2>
+        <p id="prediction">Laddar...</p>
+    </div>
+
+    <div class="card">
+        <h2>Temperaturtrend (senaste 10 mätningar)</h2>
+        <canvas id="temperatureChart"></canvas>
+    </div>
+</body>
+</html>
