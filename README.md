@@ -28,7 +28,8 @@ Detta projekt övervakar temperatur med en Arduino och visualiserar samt föruts
    - Python 
    - pip  
    - Arduino IDE  
-   - DHT11-sensor  
+   - DHT11-sensor  (port D2 för data + ström och jord)
+   - USB-kabel för att koppla Arduino till datorn
    - Arduino Nano 33 BLE  
    - PySerial, Flask, scikit-learn, joblib, pandas, numpy
 
