@@ -14,5 +14,5 @@ void loop() {
   if (!isnan(temp)) {
     Serial.println(temp);
   }
-  delay(30000); // Mäta varje minut
+  delay(30000); // Mäta 30 sekunder
 }

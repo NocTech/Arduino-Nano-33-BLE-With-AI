@@ -16,7 +16,7 @@ except Exception as e:
     model = None
 
 # Konfiguration för Arduino
-ARDUINO_PORT = 'COM7'  # Ändra vid behov
+ARDUINO_PORT = 'COM4'  # Ändra vid behov
 BAUD_RATE = 9600
 
 

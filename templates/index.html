@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Temperaturövervakning</title>
@@ -10,9 +11,11 @@
             font-family: Arial, sans-serif;
             padding: 2rem;
         }
+
         h1 {
             color: #333;
         }
+
         .card {
             border: 1px solid #ddd;
             padding: 1rem;
@@ -20,11 +23,13 @@
             margin-bottom: 1rem;
             background-color: #f9f9f9;
         }
+
         canvas {
             max-width: 100%;
         }
     </style>
 </head>
+
 <body>
     <h1>🌡 Temperaturövervakning</h1>
 
@@ -35,7 +40,7 @@
     </div>
 
     <div class="card">
-        <h2>Prediktion om 10 minuter</h2>
+        <h2>Prediktion efter 10 mätningar (Linear Regression)</h2>
         <p id="prediction">Laddar...</p>
     </div>
 
@@ -44,4 +49,5 @@
         <canvas id="temperatureChart"></canvas>
     </div>
 </body>
+
 </html>
